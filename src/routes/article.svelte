@@ -1,6 +1,9 @@
 <script context="module">
   export function preload({ params, query }) {
-    return this.fetch(`http://my-json-server.typicode.com/betososa/sapper-test/articles/1`).then(r => r.json()).then(article => {
+    console.log('??????')
+    console.log(">>>", params)
+    console.log("<<<", query)
+    return this.fetch(`http://my-json-server.typicode.com/betososa/sapper-test/articles/${query.id}`).then(r => r.json()).then(article => {
       return { article };
     });
   }

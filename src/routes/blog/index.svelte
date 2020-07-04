@@ -1,13 +1,13 @@
 <script context="module">
 	export function preload({ params, query }) {
-		return this.fetch(`blog.json`).then(r => r.json()).then(posts => {
-			return { posts };
+		return this.fetch(`https://jsonplaceholder.typicode.com/todos/1`).then(r => r.json()).then(todo => {
+			return { todo };
 		});
 	}
 </script>
 
 <script>
-	export let posts;
+	export let todo;
 </script>
 
 <style>
@@ -18,7 +18,11 @@
 </style>
 
 <svelte:head>
-	<title>Blog</title>
+	<title>{todo.title}</title>
+	<meta property="og:title" content={todo.title} />
+	<meta property="og:type" content="video.movie" />
+	<meta property="og:url" content={todo.title} />
+	<meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
 </svelte:head>
 
 <h1>Recent posts</h1>

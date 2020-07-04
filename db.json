@@ -1,0 +1,16 @@
+{
+  "articles": [
+    {
+      "id": 1
+      "image": "https://resources.claroshop.com/medios-plazavip/mkt/5d14f83492528_1jpg.jpg",
+      "title": "Computadora alienware",
+      "description": "Una compu bien chicles"
+    },
+    {
+      "id": 2
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/HNQP2?wid=2000&hei=2000&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1573245424568",
+      "title": "Audifonos",
+      "description": "Muy bonitos"
+    }
+  ]
+}
